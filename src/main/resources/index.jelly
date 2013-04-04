@@ -1,0 +1,9 @@
+<!--
+  This view is used to render the plugin list page.
+
+  Since we don't really have anything dynamic here, let's just use static HTML. 
+-->
+<div>
+  Extend Jenkins to supply <a href='http://www.w3.org/TR/cors/' target='_blank'>CORS</a> header.
+  Use system property 'cors.origin' for anything other than '*'.
+</div>
