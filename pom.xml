@@ -8,9 +8,9 @@
 		<relativePath />
 	</parent>
 	<groupId>org.jvnet.hudson.plugins</groupId>
-    <artifactId>monitoring</artifactId>
+	<artifactId>cors</artifactId>
 	<packaging>hpi</packaging>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.0</version>
 	<name>CORS</name>
 	<description>Extend Jenkins response header to contain CORS information</description>
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/Cors</url>
