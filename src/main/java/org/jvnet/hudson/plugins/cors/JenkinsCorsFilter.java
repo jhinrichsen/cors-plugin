@@ -11,7 +11,9 @@ import java.io.IOException;
  */
 public class JenkinsCorsFilter implements Filter {
 
-	private static final String ORIGIN = System.getProperty("cors.origin");
+    private static final String CORS_ORIGIN = System.getProperty("cors.origin", "*");
+    private static final String CORS_METHODS = System.getProperty("cors.methods", "GET, POST, PUT, DELETE");
+    private static final String CORS_HEADERS = System.getProperty("cors.headers", "Authorization");
 
     /** {@inheritDoc} */
     public void init(FilterConfig filterConfig) throws ServletException {}
@@ -21,7 +23,9 @@ public class JenkinsCorsFilter implements Filter {
 			throws IOException, ServletException {
 		if (response instanceof HttpServletResponse) {
             final HttpServletResponse resp = (HttpServletResponse) response;
-            resp.addHeader("Access-Control-Allow-Origin", (null == ORIGIN ? "*" : ORIGIN));
+            resp.addHeader("Access-Control-Allow-Origin", CORS_ORIGIN);
+            resp.addHeader("Access-Control-Allow-Methods", CORS_METHODS);
+            resp.addHeader("Access-Control-Allow-Headers", CORS_HEADERS);
         }
         chain.doFilter(request, response);
     }
