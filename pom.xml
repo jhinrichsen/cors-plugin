@@ -10,7 +10,7 @@
 	<groupId>org.jvnet.hudson.plugins</groupId>
   <artifactId>cors</artifactId>
 	<packaging>hpi</packaging>
-	<version>0.2.0</version>
+	<version>0.3.0</version>
 	<name>CORS</name>
 	<description>Extend Jenkins response header to contain CORS information</description>
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/Cors</url>

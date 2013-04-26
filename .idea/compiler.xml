@@ -23,7 +23,6 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="cors" />
-        <module name="monitoring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
