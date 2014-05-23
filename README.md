@@ -18,3 +18,14 @@ Use system properties to override defaults:
   </tr>
 </table>
 
+
+Installing
+==========
+
+1. Install the latest version of Maven
+2. Download and extract the source for this project
+3. open a terminal and `cd` to the place you extracted the project
+4. `maven` with the project folder as cwd
+5. Open `http://jenkins/updateCenter/advanced` - The advanced tab of jenkins plugins
+6. Upload cors.hpi from project/targets to the jenkins instance
+7. Restart jenkins
